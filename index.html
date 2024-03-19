@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guess</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="game_name">
+            <h1>NUMBER GUESS</h1>
+        </div>
+        <section id="guesses">
+            <div class="number_guess" id="0">
+                <input type="number" min="0" max="9" class="input1" oninput="moveFocus(1,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input2" oninput="moveFocus(2,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input3" oninput="moveFocus(3,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input4" oninput="moveFocus(4,event)" placeholder="X">
+            </div>
+
+            <div class="number_guess" id="1">
+                <input type="number" min="0" max="9" class="input1" oninput="moveFocus(1,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input2" oninput="moveFocus(2,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input3" oninput="moveFocus(3,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input4" oninput="moveFocus(4,event)" placeholder="X">
+            </div>
+
+            <div class="number_guess" id="2">
+                <input type="number" min="0" max="9" class="input1" oninput="moveFocus(1,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input2" oninput="moveFocus(2,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input3" oninput="moveFocus(3,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input4" oninput="moveFocus(4,event)" placeholder="X">
+            </div>
+
+            <div class="number_guess" id="3">
+                <input type="number" min="0" max="9" class="input1" oninput="moveFocus(1,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input2" oninput="moveFocus(2,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input3" oninput="moveFocus(3,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input4" oninput="moveFocus(4,event)" placeholder="X">
+            </div>
+
+            <div class="number_guess" id="4">
+                <input type="number" min="0" max="9" class="input1" oninput="moveFocus(1,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input2" oninput="moveFocus(2,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input3" oninput="moveFocus(3,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input4" oninput="moveFocus(4,event)" placeholder="X">
+            </div>
+
+            <div class="number_guess" id="5">
+                <input type="number" min="0" max="9" class="input1" oninput="moveFocus(1,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input2" oninput="moveFocus(2,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input3" oninput="moveFocus(3,event)" placeholder="X">
+                <input type="number" min="0" max="9" class="input4" oninput="moveFocus(4,event)" placeholder="X">
+            </div>
+        </section>
+
+        <div id="attempts_left">
+            <h2>Tentativi rimasti: <span id="lefts">6</span></h2>
+        </div>
+    </main>
+
+    <div id="vittoria">
+        <h1>COMPLIMENTI</h1>
+        <h2>Hai vinto!</h2>
+        <h2>Tentativi usati: <span id="punteggio">1</span></h2>
+        <button onclick="restartFunction()">RESTART</button>
+    </div>
+
+    <div id="sconfitta">
+        <h1>PECCATO</h1>
+        <h2>Hai perso.</h2>
+        <button onclick="restartFunction()">RESTART</button>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>

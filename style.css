@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+body{
+    background-color: #B7C7AF;
+    margin: 0;
+}
+
+main {
+    width: 30vw;
+    margin: auto;
+}
+
+#vittoria, #sconfitta {
+    text-align: center;
+    height: 20vh;
+    background-color: rgba(0,0,0,0.1);
+    width: 40vw;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2vh;
+    font-size: clamp(8px, 2vh,50px);
+    overflow: hidden;
+}
+
+button {
+    width: 20%;
+    aspect-ratio: 4/1;
+    font-size: 100%;
+    margin: 1% auto 0 auto;
+    overflow: hidden;
+    background-color: #136F63;
+    border: 0;
+    border-radius: 7px;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 2px 1px;
+}
+
+#game_name, #attempts_left {
+    height: 10vh;
+    background-color: #136F63;
+    width: 100%;
+    margin: 1vh auto;
+    display: flex;
+    align-items: center;
+    border-radius: 1vh;
+}
+
+#game_name > h1, #attempts_left > h2 {
+    width: fit-content;
+    margin: auto;
+    white-space: nowrap; 
+    overflow: hidden;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#game_name > h1 {
+    font-size: 300%;
+}
+
+#attempts_left > h2 {
+    font-size: 150%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]{
+    margin: 0 0.2vw;
+    aspect-ratio: 1/1;
+    border: none;
+    text-align: center;
+    border-radius: 1vh;
+    font-size: 200%;
+}
+
+.number_guess{
+    background-color: #846C5B;
+    border-radius: 1vh;
+    display: none;
+    justify-content: center;
+    width:  100%;
+    margin: 1vh auto;
+    padding: 1vh 2vw;
+}
+
+.number_guess[id="0"] {
+    display: flex;
+}
